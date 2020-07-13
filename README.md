@@ -1,2 +1,2 @@
 # Portfolio
-[Работа 1](http://sabaka.net)
+[Работа 1](https://daniil931.github.io/Portfolio/Work1)
