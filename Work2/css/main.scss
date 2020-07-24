@@ -1,0 +1,219 @@
+@mixin font-nunito($size) {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: $size;
+}
+
+@mixin font-Roboto($size) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $size;
+}
+
+@mixin h1 {
+    @include font-nunito(40px);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    color: #16133E;
+}
+
+@mixin h2 {
+    @include font-Roboto(18px);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    color: #5A7184;
+}
+
+@mixin h2_upper {
+    @include font-Roboto(16px);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    color: #87A1B6;
+}
+
+@mixin button($height,$width,$background,$color,$border,$border-radius) {
+    height: $height;
+    width: $width;
+    background: $background;
+    color: $color;
+    border-radius: $border-radius;
+    @include font-Roboto(16px);
+    font-weight: 500;
+    border:$border;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+}
+
+@media (max-width:1160px) {
+    body {
+        .header {
+            &-wrapper{
+                width: 100% !important;
+
+                &-logo {
+                    margin-left: 20px;
+                }
+
+                &-navigation {
+                    width: 300px !important;
+                }
+
+                &-buttons {
+                    margin-right: 30px;
+                }
+             }
+          }
+        }
+    }
+
+@media (max-width:870px){
+    body {
+        .header {
+            &-wrapper {
+                height: 80px !important;
+
+                &-navigation {
+                    display: none !important;
+                }
+
+                &-buttons {
+                    display: none;
+                } 
+
+                &-menu {
+                    display: block !important;
+                    margin-right: 20px;
+
+                    button:focus + ul {
+                        opacity: 1 !important;
+                        transition: 0.3s;
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    .header {
+        width: 100%;
+
+        &-wrapper {
+            display: flex;
+            width: 1158px;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            height: 119px;
+            border-bottom: 1px solid #EFEEF3;
+
+            &-logo {
+                display: flex;
+                @include font-Roboto(33px);
+                font-weight: 500;
+                align-items: center;
+
+                img {
+                    margin-right: 16px;
+                }
+            }
+
+            &-navigation {
+                width: 400px;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    @include font-Roboto(16px);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px;
+                    cursor: pointer;
+                }
+            }
+
+            &-buttons {
+
+                button.first {
+                    @include button(46px,120px,none,#16133E,1px solid #16133E,5px);
+                    margin-right: 16px;
+                    &:hover {
+                        background:#16133E;
+                        color: white;
+                        transition: 0.3s;
+                        
+                    }
+                }
+
+                button.second {
+                    @include button(46px,120px,#16133E,white,1px solid #16133E,5px);
+                }
+                
+            }
+
+            &-menu {
+                display: none;
+
+                button {
+                    background: none;
+                    border: none;
+                    margin-right: 10px;
+                    width: 25px;
+                    height: 25px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                ul {
+                    transition: 0.3s;
+                    margin-top: 25px;
+                    opacity: 0;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    transform: translateX(-170px);
+                    margin-left: 0; 
+                    padding-left: 0;
+                    border: 1px rgb(223, 223, 223) solid;
+                    border-radius: 5px;
+                    background: white;
+
+                    li {
+                        cursor: pointer;
+                        @include h2();
+                        color: black;
+                        text-align: center;
+                        width: 200px;
+                        height: 50px;
+                        line-height: 50px;
+                        border-bottom: 1px rgb(223, 223, 223) solid;
+
+                        &:hover {
+                            background:rgb(245, 245, 245) ;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    
+
+
+}
