@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/iconsite.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/dist/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mamon</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 500);
+           });
+       });
+
+       $(document).ready(function(){
+           $("#menu2").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 500);
+           });
+       });
+
+    </script>
+</head>
+<body>
+
+        <header>
+
+            <div class="header">
+
+                <div class="header-logo">
+
+                    <img src="img/header/logo.svg" alt="">
+
+                    <span>mamon</span>
+
+                </div>
+
+                <ul class="header-navigation" id="menu">
+                    <li><a href="#services" style="color: black; text-decoration: none;">Services</a></li>
+                    <li><a href="#clients" style="color: black; text-decoration: none;">Clients</a></li>
+                    <li><a href="#team" style="color: black; text-decoration: none;">Our team</a></li>
+                    <li><button>Contact Us</button></li>
+                </ul>
+
+                <div class="menu" id="menu2">
+                    
+                    <div class="img" tabindex="0"><img src="img/header/menu.svg" alt=""></div>
+
+                    <ul >
+                        <li><a href="#services" style="color: black; text-decoration: none;">Services</a></li>
+                        <li><a href="#clients" style="color: black; text-decoration: none;">Clients</a></li>
+                        <li><a href="#team" style="color: black; text-decoration: none;">Our team</a></li>
+                        <li><button>Contact Us</button></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="section1">
+
+            <div class="h1">We're an independent development agency.</div>
+
+            <p>
+                We understand the intricacies of web development<br>
+                inside-out. That's why we build rock-solid Mobile<br>
+                and Web applications enriched with user-centered<br>
+                visual experiences.
+            </p>
+
+            <button>Contact Us</button>
+
+        </div>
+
+        <a id="services"></a>
+        <div class="line">
+            
+            <div class="line-left-wrapper"></div>
+
+            <div class="wrapper">
+
+                <span>OUR SERVICES</span>
+
+                <div class="wrapper-line"></div>
+
+            </div>
+
+            <div class="line-right-wrapper"></div>
+
+        </div>
+        
+        
+        <div class="section2">
+
+            <div class="section2-block">
+
+                <div class="img">
+                    <img src="img/section2/icon1.svg" alt="">
+                </div>
+
+                <div class="text">
+
+                    <div class="h3">Mobile Development</div>
+
+                    <p>
+                        We develop mobile apps for all contemporary<br>
+                        mobile platforms. Mamon team builds<br>
+                        native and cross-platform solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="section2-block">
+
+                <div class="img">
+                    <img src="img/section2/icon2.svg" alt="">
+                </div>
+
+                <div class="text">
+
+                    <div class="h3">Web Development</div>
+
+                    <p>
+                        Mamon offers full range of services from various<br>
+                        CMS and frameworks based websites to complex<br>
+                        ERP/CRM solutions and e-commerce stores.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="section2-block">
+
+                <div class="img">
+                    <img src="img/section2/icon3.svg" alt="">
+                </div>
+
+                <div class="text">
+
+                    <div class="h3">Product Design</div>
+
+                    <p>
+                        We create design given the product audience,<br>
+                        goal, business domain, technology and<br>
+                        the platform for the solution.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="section2-block">
+
+                <div class="img" style="width: 139px;">
+                    <img src="img/section2/icon4.svg" alt="">
+                </div>
+
+                <div class="text">
+
+                    <div class="h3">Quality Assurance</div>
+
+                    <p>
+                        Our QA team ensures high standard of<br>
+                        quality of products delivered.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <a id="clients"></a>
+        <div class="line" style="margin-top: 18px;">
+
+            <div class="line-left-wrapper"></div>
+
+            <div class="wrapper">
+
+                <span>OUR CLIENTS</span>
+
+                <div class="wrapper-line"></div>
+
+            </div>
+
+            <div class="line-right-wrapper"></div>
+
+        </div>
+
+        <div class="section3">
+            <div class="section-line">
+                <block><img src="img/section3/line1/icon1.svg" alt=""></block>
+                <block><img src="img/section3/line1/icon2.svg" alt=""></block>
+                <block><img src="img/section3/line1/icon3.svg" alt=""></block>
+                <block><img src="img/section3/line1/icon4.svg" alt=""></block>
+            
+                <block><img src="img/section3/line2/icon1.svg" alt=""></block>
+                <block><img src="img/section3/line2/icon2.svg" alt=""></block>
+                <block><img src="img/section3/line2/icon3.svg" alt=""></block>
+                <block><img src="img/section3/line2/icon4.svg" alt=""></block>
+            
+                <block><img src="img/section3/line3/icon1.svg" alt=""></block>
+                <block><img src="img/section3/line3/icon2.svg" alt=""></block>
+                <block><img src="img/section3/line3/icon3.svg" alt=""></block>
+                <block><img src="img/section3/line3/icon4.svg" alt=""></block>
+            </div>
+        </div>
+
+        <a id="team"></a>
+        <div class="line" style="margin-top: 0px;">
+
+            <div class="line-left-wrapper"></div>
+
+            <div class="wrapper">
+
+                <span>OUR TEAM</span>
+
+                <div class="wrapper-line"></div>
+
+            </div>
+
+            <div class="line-right-wrapper"></div>
+
+        </div>
+
+        <div class="section4">
+
+            
+
+                <block>
+                    <img src="img/section4/line1/photo1.svg" alt="">
+                    <div class="text">
+                        <div class="name">Vadim</div>
+                        <div class="work-position">Managing Director</div>
+                    </div>
+                </block>
+
+                <block>
+                    <img src="img/section4/line1/photo2.svg" alt="">
+                    <div class="text">
+                        <div class="name">Sergey</div>
+                        <div class="work-position">Technology Director</div>
+                    </div>
+                </block>
+
+                <block>
+                    <img src="img/section4/line1/photo3.svg" alt="">
+                    <div class="text">
+                        <div class="name">Andrey</div>
+                        <div class="work-position">Front-end Developer</div>
+                    </div>
+                </block>
+
+            
+
+            
+
+                <block>
+                    <img src="img/section4/line2/photo1.svg" alt="">
+                    <div class="text">
+                        <div class="name">Alex</div>
+                        <div class="work-position">Front-end Developer</div>
+                    </div>
+                </block>
+
+                <block>
+                    <img src="img/section4/line2/photo2.svg" alt="">
+                    <div class="text">
+                        <div class="name">Agneshka</div>
+                        <div class="work-position">Mobile Developer</div>
+                    </div>
+                </block>
+
+                <block>
+                    <img src="img/section4/line2/photo3.svg" alt="">
+                    <div class="text">
+                        <div class="name">Dmitry</div>
+                        <div class="work-position">Back-end Developer</div>
+                    </div>
+                </block>
+
+            
+
+            
+
+                <block>
+                    <img src="img/section4/line3/photo1.svg" alt="">
+                    <div class="text">
+                        <div class="name">Artyom</div>
+                        <div class="work-position">Back-end Developer</div>
+                    </div>
+                </block>
+
+                <block>
+                    <img src="img/section4/line3/photo2.svg" alt="">
+                    <div class="text">
+                        <div class="name">Evgeny</div>
+                        <div class="work-position">Product Designerr</div>
+                    </div>
+                </block>
+
+                <block>
+                    <img src="img/section4/line3/photo3.svg" alt="">
+                    <div class="text">
+                        <div class="name">Tom</div>
+                        <div class="work-position">Product Designer</div>
+                    </div>
+                </block>
+
+            
+
+        </div>
+
+        <footer>
+
+            <div class="footer">
+
+                <img src="img/header/logo.svg" alt="">
+
+                <ul class="navigation">
+
+                    <li><img src="img/footer/icon1.svg" alt=""></li>
+                    <li><img src="img/footer/icon2.svg" alt=""></li>
+                    <li><img src="img/footer/icon3.svg" alt=""></li>
+                    <li><img src="img/footer/icon4.svg" alt=""></li>
+
+                </ul>
+            </div>
+
+        </footer>
+
+</body>
+</html>

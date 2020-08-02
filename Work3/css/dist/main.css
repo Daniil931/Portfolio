@@ -1,0 +1,441 @@
+@charset "UTF-8";
+body {
+  background: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 53px;
+}
+
+body header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1181px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 58px;
+}
+
+body header .header-logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+body header .header-logo span {
+  margin-left: 25px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #202020;
+}
+
+body header .header-navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 379px;
+  align-items: center;
+}
+
+body header .header-navigation li {
+  cursor: pointer;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #202020;
+}
+
+body header .header-navigation li button {
+  background: #5528FF;
+  border-radius: 5px;
+  width: 100px;
+  height: 24px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+body header .header-navigation li button:focus {
+  outline: none;
+}
+
+body header .header .menu {
+  display: none;
+}
+
+body header .header .menu .img {
+  cursor: pointer;
+}
+
+body header .header .menu .img img {
+  height: 20px;
+}
+
+body header .header .menu .img:focus {
+  outline: none;
+}
+
+body header .header .menu .img:focus + ul {
+  pointer-events: all;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+body header .header .menu ul {
+  pointer-events: none;
+  margin-top: -5px;
+  transform: translatey(-10px);
+  transition: 0.5s;
+  opacity: 0;
+  display: flex;
+  width: 170px;
+  transform: translateX(-150px);
+  position: absolute;
+  list-style: none;
+  flex-direction: column;
+  border: 1px #cfcfcf solid;
+  border-radius: 4px;
+  padding-bottom: 10px;
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+}
+
+body header .header .menu ul li {
+  text-align: center;
+}
+
+body header .header .menu ul li a {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  align-items: center;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #202020;
+}
+
+body header .header .menu ul li button {
+  background: #5528FF;
+  border-radius: 5px;
+  width: 100px;
+  height: 24px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+body header .header .menu ul li button:focus {
+  outline: none;
+}
+
+body .section1 {
+  width: 1186px;
+  margin-top: 175px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body .section1 .h1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 57px;
+  color: #202020;
+}
+
+body .section1 p {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  color: #4F4F4F;
+  margin-top: 35px;
+}
+
+body .section1 button {
+  margin-top: 70px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  width: 235px;
+  height: 60px;
+  color: #FFFFFF;
+  background: #5528FF;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+body .section1 button:focus {
+  outline: none;
+}
+
+body .line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+body .line-left-wrapper {
+  background: #C2C2C2;
+  height: 1px;
+  width: 100%;
+  border-right: 19px white solid;
+}
+
+body .line .wrapper {
+  width: 1181px;
+  display: flex;
+  align-items: center;
+}
+
+body .line .wrapper span {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #C2C2C2;
+  width: 110px;
+}
+
+body .line .wrapper-line {
+  width: 1070px;
+  background: #C2C2C2;
+  height: 1px;
+}
+
+body .line-right-wrapper {
+  background: #C2C2C2;
+  height: 1px;
+  width: 100%;
+}
+
+body .section2 {
+  width: 1181px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body .section2-block {
+  flex-basis: 464px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 82px;
+}
+
+body .section2-block .img {
+  width: 149px;
+  text-align: center;
+}
+
+body .section2-block .text .h3 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: #000000;
+}
+
+body .section2-block .text p {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B2B2B2;
+}
+
+body .section3 {
+  width: 1168px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body .section3 .section-line {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+body .section3 .section-line block {
+  text-align: center;
+  width: 292px;
+  margin-bottom: 50px;
+}
+
+body .section4 {
+  width: 1181px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body .section4 block {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+body .section4 block .text {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+body .section4 block .text .name {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #202020;
+}
+
+body .section4 block .text .work-position {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #B2B2B2;
+  margin-top: 10px;
+}
+
+body footer {
+  background: #F7F7F7;
+  height: 100px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+body footer .footer {
+  height: 100px;
+  width: 1181px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body footer .footer img {
+  cursor: pointer;
+}
+
+body footer .footer .navigation {
+  list-style: none;
+  display: flex;
+  width: 216px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body footer .footer .navigation li {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body .line-left-wrapper {
+    display: none;
+  }
+  body .line-right-wrapper {
+    display: none;
+  }
+  body .line .wrapper {
+    width: 100%;
+  }
+  body .line .wrapper span {
+    margin-right: 10px;
+  }
+  body .line .wrapper-line {
+    width: 100%;
+  }
+  body header .header {
+    width: 100%;
+  }
+  body .section1 {
+    width: 100%;
+  }
+  body .section2 {
+    width: 100%;
+  }
+  body .section2-block {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body .section3 {
+    width: 100%;
+  }
+  body .section3 .section-line block {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body .section4 {
+    width: 100%;
+  }
+  body .section4 block {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body footer .footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  body header .header-navigation {
+    display: none;
+  }
+  body header .header .menu {
+    display: block !important;
+  }
+  body .section1 .h1 {
+    font-size: 47px !important;
+  }
+  body .section1 p {
+    font-size: 22px;
+  }
+  body .section1 button {
+    font-size: 14px;
+    height: 50px;
+    width: 225px;
+  }
+}

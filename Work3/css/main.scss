@@ -1,0 +1,507 @@
+@mixin ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@mixin line {
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        &-left-wrapper {
+            background: #C2C2C2;
+            height: 1px; 
+            width: 100%;
+            border-right: 19px white solid;
+        }
+
+        .wrapper {
+            width: 1181px;
+            display: flex;
+            align-items: center;
+
+            span {
+                font-family: Ubuntu;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;    
+                color: #C2C2C2;
+                width: 110px;
+            }
+
+            &-line {
+                width: 1070px;
+                background: #C2C2C2;
+                height: 1px;
+            }
+        }
+
+        &-right-wrapper {
+            background: #C2C2C2;
+            height: 1px; 
+            width: 100%;
+        }
+}
+
+
+body {
+    
+    background: #FFFFFF;
+    @include ubuntu();
+    margin:0;
+    padding:0;
+    padding-top: 53px;
+    
+    header {
+
+        .header {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1181px;
+            margin-right: auto;
+            margin-left: auto;
+            height: 58px;
+
+            &-logo {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-left: 25px;
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    color: #202020;
+                }
+            }
+
+            &-navigation {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                width: 379px;
+                align-items: center;
+
+                li {
+                    cursor: pointer;
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: #202020;
+
+                    button {
+                        background: #5528FF;
+                        border-radius: 5px;
+                        width: 100px;
+                        height: 24px;
+                        border: none;
+                        color: white;
+                        cursor: pointer;
+                        font-family: Ubuntu;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+
+            }
+
+            .menu {
+                display: none ;
+
+                .img{
+                    cursor: pointer;
+
+                    
+                    img {
+                        height: 20px;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:focus + ul {
+                        pointer-events: all;
+                        opacity: 1;
+                        margin-top: 10px;
+                    }
+
+                    
+                }
+
+                ul {
+                    pointer-events: none;
+                    margin-top: -5px;
+                    transform: translatey(-10px);
+                    transition: 0.5s;
+                    opacity: 0;
+                    display: flex;
+                    width: 170px;
+                    transform: translateX(-150px);
+                    position: absolute;
+                    list-style: none;
+                    flex-direction: column;
+                    border: 1px rgb(207, 207, 207) solid;
+                    border-radius: 4px;
+                    padding-bottom: 10px;
+                    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+                    padding-left: 0;
+
+                    li {
+                        text-align: center;
+
+                        a {
+                            display: block;
+                            text-align: center;
+                            line-height: 50px;
+                            height: 50px;
+                            align-items: center;
+                            font-family: Ubuntu;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 14px;
+                            color: #202020;
+                        }
+
+                        button {
+                            
+                            background: #5528FF;
+                            border-radius: 5px;
+                            width: 100px;
+                            height: 24px;
+                            border: none;
+                            color: white;
+                            cursor: pointer;
+                            font-family: Ubuntu;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 14px;
+    
+                            &:focus {
+                                outline: none;
+                            }   
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .section1 {
+        width: 1186px;
+        margin-top: 175px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .h1 {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 57px;
+            color: #202020;
+        }
+
+        p {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            color: #4F4F4F;
+            margin-top: 35px;
+        }
+
+        button {
+            margin-top: 70px;
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            width: 235px;
+            height: 60px;
+            color: #FFFFFF;
+            background: #5528FF;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .line {
+
+        @include line();
+       
+    }
+
+    .section2 {
+        width: 1181px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-block {
+            flex-basis: 464px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 82px;
+
+            .img {
+                width: 149px;
+                text-align: center;
+            }
+
+
+            .text {
+                .h3 {
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 28px;
+                    color: #000000;
+                }
+
+                p {
+                    font-family: Ubuntu ;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+
+                    color: #B2B2B2;
+                }
+            }
+            
+        }
+    }
+
+    .section3 {
+        width: 1168px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+
+        .section-line {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 50px;
+
+            block {
+                text-align: center;
+                width: 292px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .section4 {
+        width: 1181px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+
+            block {
+                width: 300px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 50px;
+
+                .text {
+                    margin-left: 40px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .name {
+                        font-family: Ubuntu;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 28px;
+                        color: #202020;
+                    }
+                    
+                    .work-position {
+                        font-family: Ubuntu;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        color: #B2B2B2;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        
+    }
+
+    footer {
+        background: #F7F7F7;
+        height: 100px;
+        align-items: center;
+        margin-top: 50px;
+
+        .footer {
+            height: 100px;
+            width: 1181px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                cursor: pointer;
+            }
+
+            .navigation {
+                list-style: none;
+                display: flex;
+                width: 216px;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1400px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .line {
+            &-left-wrapper {
+                display: none;
+            }
+
+            &-right-wrapper {
+                display: none;
+            }
+
+            .wrapper {
+                width: 100%;
+
+                span {
+                    margin-right: 10px;
+                }
+
+                &-line {
+                    width: 100%;
+                }
+            }
+
+        }
+        
+        header {
+            .header {
+                width: 100%;
+            }
+        }
+
+        .section1 {
+            width: 100%;
+        }
+
+        .section2 {
+            width: 100%;
+            
+            &-block {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        .section3 {
+            width: 100%;
+
+            .section-line {
+                block {
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .section4 {
+            width: 100%;
+            block {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            .footer {
+                width: 100%;
+                
+            }
+        }
+    }
+}
+
+@media (max-width:750px) {
+    body {
+
+        header{
+            .header{
+
+                &-navigation {
+                    display: none;
+                }
+
+                .menu {
+                    display: block !important;
+                }
+            }
+        }
+
+        .section1 {
+            .h1 {
+                font-size: 47px !important;
+            }
+            p {
+                font-size: 22px;
+            }
+
+            button {
+                font-size: 14px;
+                height: 50px;
+                width: 225px;
+            }
+        }
+
+        
+    }
+}
